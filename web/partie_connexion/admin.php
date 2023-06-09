@@ -18,7 +18,16 @@ if (!isset($_SESSION['administrator']) || $_SESSION['administrator'] !== true) {
 <body>
 
 <h1>Bienvenue sur la page de l'administrateur</h1>
-	
+	<?php
+if(isset($_POST['submit'])){
+  header("Location: formulaire_exemple.html"); 
+  exit;
+}
+?>
+
+<form method="post">
+  <input type="submit" name="submit" value="déconnexion">
+</form>
 
 </body>
 </html>
