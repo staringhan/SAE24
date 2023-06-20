@@ -66,7 +66,7 @@ section.contenu ul{
 	  color: white;
 }
 
-section.contenu ul li{
+ul.fichiers li {
     font-size: 20px;
 	  color: white;
 	  list-style: disc;
@@ -96,7 +96,8 @@ section.texte p{
 	color:white;
 	text-align: justify;
 	font-size: 17px;
-	font-weight: 300
+	font-weight: 300;
+	line-height: 2;
 }
 section.titre h1{
     font-weight: 600;
