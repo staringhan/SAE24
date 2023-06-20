@@ -14,7 +14,7 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
 <head>
   <meta charset="utf-8">
   <title>SAE 24 - Page de connexion</title>
-  <meta name="author" content="Daniel Halidi">
+  <meta name="author" content="IcpOcc">
   <meta name="description" content="SAE 24, Accueil">
   <meta name="keywords" content="HTML, CSS">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -37,9 +37,6 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
     <ul class="nav-liste" id="navi-liste">
       <li class="element-liste">
         <a href="#">Rendez-Vous</a>
-      </li>
-      <li class="element-liste">
-        <a class="current" href="#">Se connecter</a>
       </li>
     </ul>
   </nav>

@@ -156,6 +156,24 @@ input[type=text]:placeholder {
   border-bottom: 2px solid #5fbae9;
 }
 
+input#login {
+	background-image: url("../media/user1.svg");
+	background-repeat: no-repeat;
+	color: black;
+	background-position: 2%;
+	background-size: 20px;
+	font-size: 16px;
+  }
+
+  input#mdp {
+	background-image: url("../media/pass.png");
+	background-repeat: no-repeat;
+	color: black;
+	background-position: 2%;
+	background-size: 20px;
+	font-size: 16px;
+  }
+
 *:focus {
   outline: none;
 }

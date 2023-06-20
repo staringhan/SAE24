@@ -5,28 +5,27 @@
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
-	list-style: none;
+	list-style: disc;
 	font-family: 'Poppins', sans-serif;
 }
 
 body{
-background-color: #026054;
-background-image: linear-gradient(152deg, #026054 0%, #6c7b7a 100%);
-
+ background-image: linear-gradient(to right top, #6f546f, #6d5976, #6a5d7c, #666282, #626787, #576988, #4d6b86, #446d83, #396b78, #35696a, #39655c, #41604e);
 
 
 
 }
 
 a{
-color: white;
+color: black;
 }
 
 
 img.schema{
-	margin-top: 3%;
+	display: block;
+    width: 60%;
+    margin: auto;
 	margin-bottom: 3%;
-	margin-left: 40%;
 }
 
 .navbar{
@@ -70,24 +69,14 @@ section.contenu ul{
     width: auto;
 	  margin-left: 6%;
 	  line-height: 35px;
-	  color: white;
+	  color: black;
+	  list-style:disc;
 }
 
-ul.fichiers{
-	padding-top: 20px;
-	margin-bottom: 2%;
-}
 
-ul.fichiers li {
-    font-size: 20px;
-	  color: white;
-	  list-style: disc;
-	  text-decoration: underline
-}
 
 section.titre{
-    background-color: rgba(0, 0, 0, 0.46);
-	  
+    background-color: white;
     text-align: center;
     margin: auto 20%;
     padding: 2%;
@@ -97,7 +86,7 @@ section.titre{
 section.texte{
 	padding: 2% 5%;
 	border-radius: 20px;
-	background-color: rgba(0, 0, 0, 0.46);
+	background-color: white;
   margin-top: 3%;
 	margin-left: 3%;
 	margin-right: 3%;
@@ -106,11 +95,13 @@ section.texte{
 
 section.texte ul{
 	margin-top: 20px;
+	
+	
 }
 
 
 section.texte p{
-	color:white;
+	color:black;
 	text-align: justify;
 	font-size: 17px;
 	font-weight: 300;
@@ -119,6 +110,56 @@ section.texte p{
 section.titre h1{
     font-weight: 600;
 	  font-size: 30px;
-	color: white;
+	color: black;
 	
+}
+
+/*---------------------------------------------*/
+
+.rectangleconteneur {
+  width: 100%;
+  margin-left: 3%;
+  width: 97%;
+
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rectangle {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  margin-right: 3%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding-left: 3%;
+}
+
+.rectangle img {
+  width: 100px;
+  height: 100px;
+  margin-left: 0;
+  border-radius: 50%;
+  margin-top: 3%;
+  margin-right: 10%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.rectangletexte {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.rectangletexte h1 {
+  font-size: 30px;
+  margin: 0;
+  color: black;
+}
+
+.rectangletexte a {
+  font-size: 15px;
+  text-decoration: none;
+  color: darkgreen;
 }
