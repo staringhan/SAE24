@@ -36,10 +36,10 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
 
     <ul class="nav-liste" id="navi-liste">
       <li class="element-liste">
-        <a href="#">Nos services</a>
+        <a href="#">Rendez-Vous</a>
       </li>
       <li class="element-liste">
-        <a class="current" href="./web/connexion.html">Se connecter</a>
+        <a class="current" href="#">Se connecter</a>
       </li>
     </ul>
   </nav>
