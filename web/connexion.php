@@ -46,17 +46,12 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
 
   </header>
 
-   <section class="imageconteneur">
-    <img src="../media/medecins.jpeg" class="imagebody" alt="image de fond">
-    <section class="textecentre"><h1>Éveillez votre bien-être intérieur par notre toucher bienveillant</h1></section>     
-  </section>
-
   <section class="wrapper">
     <section id="formContenu">
       <h2 class="active">Se connecter</h2>
 
       <section class="image">
-        <img src="../media/database.svg" id="icon" alt="User Icon">
+        <img src="../media/VLOGOgreen.png" id="icon" alt="Logo VitalTouch">
       </section>
 
       <form action="../php/login.php" method="post">
