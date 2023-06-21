@@ -125,12 +125,12 @@ li.element-liste a::after{
 
 /*---------------------------------------------*/
 
-section.ContenuPage{
+.ContenuPage{
 	margin-top: 6%;
 	max-width: 100%;
 }
 
-section.ContenuPage2{
+.ContenuPage2{
 	background-color: rgb(245,245,245);
 	padding-bottom: 1%;
 	margin-left: 3%;
@@ -152,7 +152,7 @@ p.presvitaltouch{
 }
 
 
-section.ContenuPage h2{
+.ContenuPage h2{
 	text-align: center;
 	margin-top: 8%;
 	font-size: 30px;
@@ -162,7 +162,7 @@ section.ContenuPage h2{
 
 /*----------------CARTES CLEES---------------*/
 
-section.ContenuCartes{
+.ContenuCartes{
 	max-width: 100%;
 	display: flex;
 	width: 100%;
@@ -171,25 +171,25 @@ section.ContenuCartes{
 	padding-bottom: 2%
 }
 
-section.Carte_vitaltouch{
+.Carte_vitaltouch{
 	background-color: white;
 	box-shadow:  1px 10px 10px 10px rgba(0, 0, 0, 0.15);
 	padding: 8px 2%;
 	margin: 5px 3%;
 	border-radius: 12px;
 }
-section.vtdetails{
+.vtdetails{
 	width: 100%;
 }
 
-section.vttexte{
+.vttexte{
 	font-size: 24px;
 	font-weight: 600;
 	margin-top: 16px;
 
 }
 
-section.vttexte p{
+.vttexte p{
 	font-size: 14px;
 	color: black;
 	line-height: 150%;
@@ -280,13 +280,13 @@ img.cartevitaltouch{
 	border-radius: 50%;
 	object-fit: cover;
   }
-  .card .content .name{
+  .card .content .name h5{
 	font-size: 20px;
 	font-weight: 500;
   }
 
 
-  .card .content .job{
+  .card .content .job h6{
 	font-size: 20px;
 	color: rgb(126,187,155);
   }
@@ -352,6 +352,48 @@ img.cartevitaltouch{
   input[type="radio"]{
 	display: none;
   }
+/*------------CARTES EQUIPE----------------*/
+
+
+/*------------FOOTER----------------*/
+
+
+  footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+  }
+  
+  .colonne {
+	width: 33.33%;
+	float: left;
+  }
+  
+  .colonne h3 {
+	color: white;
+  }
+  
+  .colonne ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+/*------------FOOTER----------------*/
+
+
+/*------------RESPONSIVE CARTES----------------*/
+
+
   
   @media (max-width: 768px) {
 	.main-card .cards .card{
@@ -367,7 +409,7 @@ img.cartevitaltouch{
 
 }
 
-/*---------------------------------------------*/
+/*--------------RESPONSIVE a refaire-----------------*/
 
 
 @media all and (max-width: 480px){

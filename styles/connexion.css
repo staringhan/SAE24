@@ -165,7 +165,7 @@ input#login {
 	font-size: 16px;
   }
 
-  input#mdp {
+  input#password {
 	background-image: url("../media/pass.png");
 	background-repeat: no-repeat;
 	color: black;

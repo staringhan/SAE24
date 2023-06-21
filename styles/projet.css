@@ -7,6 +7,7 @@
 	text-decoration: none;
 	list-style: disc;
 	font-family: 'Poppins', sans-serif;
+	color: black;
 }
 
 body{
@@ -20,12 +21,32 @@ a{
 color: black;
 }
 
+button{
+	margin-top: 2px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	color: black;            
+	border-radius: 10px;
+	border: none;
+	display: block;
+	/*! align-items: center; */
+	/*! margin: auto; */
+}	         
+	
+.button:hover {
+	color:gray;
+}
+	 
+
 
 img.schema{
 	display: block;
     width: 60%;
-    margin: auto;
+    /*! margin: auto; */
 	margin-bottom: 3%;
+	margin-top: 2%;
+	box-shadow: 0px 2px 8px 1px #000000;
 }
 
 .navbar{
@@ -61,13 +82,13 @@ img.schema{
 /*---------------------------------------------*/
 
 
-section.contenu{
+.contenu{
     margin-top: 3%;
 }
 
-section.contenu ul{
+.contenu ul{
     width: auto;
-	  margin-left: 6%;
+	margin-left: 6%;
 	  line-height: 35px;
 	  color: black;
 	  list-style:disc;
@@ -75,15 +96,18 @@ section.contenu ul{
 
 
 
-section.titre{
+.titre{
     background-color: white;
     text-align: center;
     margin: auto 20%;
     padding: 2%;
     border-radius: 20px;
+	font-weight: 600;
+	font-size: 40px;
+	color: black;
 }
 
-section.texte{
+.texte{
 	padding: 2% 5%;
 	border-radius: 20px;
 	background-color: white;
@@ -93,26 +117,21 @@ section.texte{
 	margin-bottom: 2%;
 }
 
-section.texte ul{
+.texte ul{
 	margin-top: 20px;
 	
 	
 }
 
 
-section.texte p{
+.texte p{
 	color:black;
 	text-align: justify;
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 2;
 }
-section.titre h1{
-    font-weight: 600;
-	  font-size: 30px;
-	color: black;
-	
-}
+
 
 /*---------------------------------------------*/
 
