@@ -21,21 +21,20 @@ a{
 color: black;
 }
 
-button{
+.button{
 	margin-top: 2px;
 	padding: 15px 45px;
+	background: darkgrey;
 	text-align: center;
 	text-transform: uppercase;
 	color: black;            
 	border-radius: 10px;
 	border: none;
-	display: block;
-	/*! align-items: center; */
-	/*! margin: auto; */
+	
 }	         
 	
 .button:hover {
-	color:gray;
+	background-color:grey;
 }
 	 
 
@@ -171,7 +170,7 @@ img.schema{
   text-align: left;
 }
 
-.rectangletexte h1 {
+.rectangletexte h3 {
   font-size: 30px;
   margin: 0;
   color: black;
