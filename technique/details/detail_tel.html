@@ -31,13 +31,54 @@
         <section class="contenu">
             <h1 class="titre">Présentation détaillée de la partie téléphonie</h1>
             <article class="texte">
-                <h3>Titre presentation</h3>
-                <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                    bla bla bla  bla bla bla v bla bla blabla bla bla bla bla bla bla bla bla 
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                <h3>Extensions.conf</h3>
+                <p>Afin de pouvoir réaliser des appels et ainsi qu’une mise en attente ou un t
+                    ransfert d’appel il faut modifier le fichier sur le serveur asterisk intitulé 
+                    “extensions.conf” dans lequel on va rajouter autant de numéros avec les 
+                    fonctionnalités que de téléphone présent dans le réseau.
+
                 </p>
-                <img class="schema" src="../../media/a_remplacer.jpeg" alt="plan du réseau ">
+                <img class="schema" src="../../media/capture_tel/1Capture.PNG" alt="config telephone ">
             </article>
+            <article class="texte">
+                <h3>SIP.conf</h3>
+                <p>Afin de pouvoir ensuite ajouter un téléphone dans le serveur asterisk avec un 
+                    numéro, mdp, codec etc il faut rajouter une configuration de téléphone dans le 
+                    fichier SIP.conf dans le serveur asterisk.
+ 
+                </p>
+                <img class="schema" src="../../media/capture_tel/2SIP.PNG" alt="config telephone ">
+            </article>
+            <article class="texte">
+                <h3>SIP SHOW PEERS</h3>
+                <p>Une fois les modifications apportées sur les différents fichiers ainsi que 
+                    chaque téléphone et bien configurés il faut redémarrer le serveur afin que 
+                    les changements soient bien appliqués puis à l'aide de la commande Sip Show 
+                    Peers vous pourrez vérifier que chaque téléphone est bien connecté au serveur asterisk.
+ 
+                </p>
+                <img class="schema" src="../../media/capture_tel/3sipshowpeer.PNG" alt="config telephone ">
+            </article>
+            <article class="texte">
+                <h3>Groupement</h3>
+                <p>Afin de réaliser un groupement d’appel il faut créer d'autres numéros en 
+                    modifiant les fichier SIP.conf et extensions.conf dans lesquels il faut 
+                    préciser que lors d’un appel ,ici des numéros 210 et 211, plusieurs téléphones 
+                    doivent sonner ou en même temps ou dans un certain ordre.
+                </p>
+                <img class="schema" src="../../media/capture_tel/4groupement.PNG" alt="config telephone ">
+            </article>
+            <article class="texte">
+                <h3>IVR</h3>
+                <p>L’IVR va permettre de créer un standard lorsque l’on appelle le numéro 221 ou une voix
+                     va nous indiquer sur quelle chiffre appuyer afin de pouvoir appeler une certaine personne. 
+                     La configuration de l’IVR se fait une fois de plus sur les fichiers SIP.conf et extensions.conf .  
+                </p>
+                <img class="schema" src="../../media/capture_tel/5IVR.PNG" alt="config telephone ">
+                <img class="schema" src="../../media/capture_tel/6IVR2.PNG" alt="config telephone ">
+
+            </article>
+            
         </section>
     </body>
 </html>
