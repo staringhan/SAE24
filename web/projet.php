@@ -39,7 +39,9 @@ if (!isset($_SESSION['admin']) ){
             <article class="texte">
                 <h2>Contexte de la SAé 24</h2>
                 <p>
-                    Expliquer le cahier des charges de la SAE
+                Dans cette SAE, nous sommes chargés de mettre en place un réseau pour un cabinet médical. 
+                Ce cabinet est composé de six personnes : trois kinésithérapeutes, un dentiste et un médecin généraliste. 
+                Pour mener à bien ce projet, nous devrons mobiliser toutes les ressources que nous avons acquises jusqu'à présent.
                 </p>
             </article>
             <article class="texte">
@@ -88,7 +90,7 @@ if (!isset($_SESSION['admin']) ){
                     <img class="schema" src="../media/logogantt.jpeg" alt="logo gannt ">
                     <section class="rectangletexte">
                         <h3>Diagramme de Gantt</h3>
-                        <a href="../technique/gantt.php" target="_blank">Diagramme de GANTT</a>
+                        <a href="../technique/gantt.php">Diagramme de GANTT</a>
                     </section>
                 </div>
                 <div class="rectangle">

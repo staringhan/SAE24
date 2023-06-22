@@ -480,43 +480,29 @@ ul{
 
 /*--------------RESPONSIVE a refaire-----------------*/
 
-
-@media all and (max-width: 480px){
-	
-	body{
-		
-    
-		
-	}
-	.navbar{
-		flex-direction: column;
-		background-color: transparent;
-		position: absolute;
-	}
-	
-	
-	.menu-hamburger{
-		cursor: pointer;
-		display: block;
-		position: fixed;
-		right: 15px;
-		top:2.5%;
-	}
+@media all and (max-width: 1290px){
 	
 	.nav-liste .element-liste{
-		display: block;
-		padding: 20px 10px;
-		padding: 6%;
-
+		letter-spacing: 0em;
 	}
 	
-	.nav-liste{
-		width: 100%;
-		text-align: center;
-		display: none;
-		padding-top: 60%
-		
+}
+
+@media all and (max-width: 1164px){
+	
+	li.element-liste a{
+		font-size: 10px;
 	}
+	
+	header{
+		display: none;
+	}	
+	
+	
+	.iconelogo{
+		width: 15%
+	}
+	
 	
 	.iconelogo{
 		padding-top: 2%;
@@ -525,8 +511,12 @@ ul{
 		width: 40%
 	}
 	
-	.imagebody{
-		
+	.ContenuCartes{
+		flex-direction: column;
+	}
+	
+	.Carte_vitaltouch{
+		margin-top: 2%;
 	}
 	
 	.textecentre{
@@ -542,4 +532,37 @@ ul{
 	}
 	
 	
+}
+
+@media all and (max-width: 1300px){
+	.button label{
+
+	background: black;
+	
+
+  }
+  
+ 
+  #one:checked ~ .button .one{
+
+	background-color: black;
+  }
+  #one:checked ~ .button .two{
+	
+	background: grey;
+  }
+  #two:checked ~ .button .one{
+
+	background: gray;
+  }
+  #two:checked ~ .button .two{
+	
+	background: black;
+  }
+}
+
+@media all and (max-width: 1820px){
+	iframe{
+		display: none;
+	}
 }
