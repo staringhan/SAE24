@@ -380,38 +380,10 @@ img.cartevitaltouch{
 	text-align: center;
   }
 
-/*------------FOOTER----------------*/
+/*------------NOS SOINS----------------*/
 
 
-  footer {
-	background-color: black;
-	color: white;
-	padding: 20px;
-  }
-  
-  .colonne {
-	width: 33.33%;
-	float: left;
-  }
-  
-  .colonne h3 {
-	color: white;
-  }
-  
-  .colonne ul, li {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-  }
-  
-  a {
-	color: white;
-	text-decoration: none;
-  }
-  
-  a:hover {
-	text-decoration: underline;
-  }
+
   
 /*------------FOOTER----------------*/
 .footercontainer{
@@ -432,7 +404,10 @@ ul{
 .ft-col{
    width: 25%;
    padding: 0 15px;
+	color: white;
 }
+
+
 .ft-col h4{
 	font-size: 18px;
 	color: #ffffff;

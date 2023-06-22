@@ -45,19 +45,6 @@ legend{
 	margin: auto;
 }
 
-@keyframes nav-load{			/*animation de la navbar*/
-	0%{
-		transform: translateY(-100%);
-	}
-
-	100%{
-			transform: translateY(0%);
-	}
-}
-
-/*NAVBAR*/
-
-
 
 .wrapper {
   display: flex;
@@ -76,7 +63,6 @@ legend{
   width: 90%;
   max-width: 450px;
   position: relative;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
   text-align: center;
 }
@@ -109,7 +95,6 @@ input[type=reset] {
   transition:.5s;
   background-size: 200% auto;
   background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
-  -webkit-box-shadow: 0 0px 40px 0 #02b958;
   border-radius: 5px;
   margin: 35px;
 }
@@ -123,15 +108,7 @@ input[type=reset]:hover {
   cursor:pointer;
 }
 
-input[type=button]:active,
-input[type=submit]:active,
-input[type=reset]:active {
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-}
+
 
 input[type=text],
 input[type=password] {
@@ -146,14 +123,14 @@ input[type=password] {
   margin: 5px;
   width: 85%;
   border: 2px solid #f6f6f6;
-  transition: all 0.5s ease-in-out;
   border-radius: 5px;
 }
 
 input[type=text]:focus,
-input[type=text]:placeholder {
+input[type=text]::placeholder {
   background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
+  
+  
 }
 
 input#login {
@@ -163,6 +140,10 @@ input#login {
 	background-position: 2%;
 	background-size: 20px;
 	font-size: 16px;
+  }
+
+  input[type=password]:focus {
+    background-color: #fff;
   }
 
   input#password {

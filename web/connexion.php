@@ -13,14 +13,15 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
 
 <head>
   <meta charset="utf-8">
-  <title>SAE 24 - Page de connexion</title>
+  <title>VitalTouch - Page de connexion</title>
   <meta name="author" content="IcpOcc">
   <meta name="description" content="SAE 24, Accueil">
   <meta name="keywords" content="HTML, CSS">
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" type="text/css" href="../styles/connexion.css" media="screen">
   <link rel="stylesheet" type="text/css" href="../styles/style.css" media="screen">
-  <link rel="shortcut icon" href="../media/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../media/VLOGOgreen.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -28,28 +29,28 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
   <header>
 
     <nav class="navbar"> 
-    <section class="logo">
+    <div class="logo">
       <a href="../index.html">
         <img class="iconelogo" src="../media/vitaltouchblack.png" alt="Logo">
       </a>
-    </section>
+    </div>
 
     <ul class="nav-liste" id="navi-liste">
       <li class="element-liste">
-        <a href="#">Rendez-Vous</a>
+        <a href="../index.html">Retour</a>
       </li>
     </ul>
   </nav>
 
   </header>
 
-  <section class="wrapper">
-    <section id="formContenu">
+  <div class="wrapper">
+    <div id="formContenu">
       <h2 class="active">Se connecter</h2>
 
-      <section class="image">
+      <div class="image">
         <img src="../media/VLOGOgreen.png" id="icon" alt="Logo VitalTouch">
-      </section>
+      </div>
 
       <form action="../php/login.php" method="post">
         <input type="text" id="login" name="login" placeholder="Identifiant">
@@ -57,8 +58,8 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
         <input type="submit" class="submit" value="Connexion">
       </form>
 
-    </section>
-  </section>
+    </div>
+  </div>
   
 </body>
 
