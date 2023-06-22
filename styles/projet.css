@@ -134,9 +134,12 @@ img.validation{
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 2;
+	margin-top: 1%;
 }
 
-
+.texte p strong{
+	font-weight: 700;
+}
 /*---------------------------------------------*/
 
 .rectangleconteneur {
