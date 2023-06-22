@@ -1,3 +1,12 @@
+<?php
+    //check session to see if the user is connected as an administrator with the right login and password
+    session_start();
+    if (!isset($_SESSION['admin']) ){
+            // sebd ab alert saying that the user is not connected and redirect to index.php;
+            echo "<script>alert('Vous n\'êtes pas connecté en tant qu\'administrateur')</script>";
+            echo "<script type='text/javascript'> window.location.href = '../../index.html'; </script>";
+          }
+    ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -21,7 +30,7 @@
             </div>
             <ul class="nav-liste" id="navi-liste">
                 <li class="element-liste">
-                    <a href="../reseau.html">Retour</a>
+                    <a href="../reseau.php">Retour</a>
                 </li>
                 <li class="element-liste">
                     <a href="../../php/deconnexion.php">Déconnexion</a>
@@ -38,7 +47,6 @@
                 </p>
                 <img class="schema" src="../../media/capture_switch_routeur/Capture.PNg" alt="plan du réseau ">
             </article>
-
             <article class="texte">
                 <h3>Configiuration du routeur</h3>
                 <p>
@@ -47,8 +55,6 @@
                 </p>
                 <img class="schema" src="../../media/capture_switch_routeur/Capture2_routeur.PNG" alt="plan du réseau ">
             </article>
-
-
         </section>
     </body>
 </html>

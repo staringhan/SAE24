@@ -12,7 +12,7 @@ $login = mysqli_real_escape_string($con, $login);
 $password = mysqli_real_escape_string($con, $password);
 
 //ash the password
-//$password = hash('sha256', $password);
+$password = hash('sha256', $password);
 
 //make the request
 $sql = "SELECT * FROM `users` WHERE `login` = '$login' AND `mdp` = '$password'";
@@ -27,11 +27,11 @@ if (mysqli_num_rows($result) > 0) {
     $_SESSION['password'] = $password;
     $_SESSION['admin'] = true;
 
-    header('Location: ../web/projet.html');
+    header('Location: ../web/projet.php');
 } else {
         echo "<script type='text/javascript'>alert('Wrong login or password');</script>";
         // Redirect to the login page after a brief delay
-        echo "<script type='text/javascript'> window.location.href = 'connexion.php'; </script>";
+        echo "<script type='text/javascript'> window.location.href = '../web/connexion.php'; </script>";
         exit;
     }
 

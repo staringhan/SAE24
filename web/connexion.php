@@ -4,10 +4,8 @@
         //verification of the existing connection, if the user is already connected, redirect to admin.php or gestionnaire.php depending on the user type
         session_start();
         if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
-          header('Location: projet.html');
-        }
-        
-        
+          header('Location: projet.php');
+        }   
         ?>
     <head>
         <meta charset="utf-8">

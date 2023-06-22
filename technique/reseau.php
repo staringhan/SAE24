@@ -1,3 +1,12 @@
+<?php
+    //check session to see if the user is connected as an administrator with the right login and password
+    session_start();
+    if (!isset($_SESSION['admin']) ){
+            // sebd ab alert saying that the user is not connected and redirect to index.php;
+            echo "<script>alert('Vous n\'êtes pas connecté en tant qu\'administrateur')</script>";
+            echo "<script type='text/javascript'> window.location.href = '../index.html'; </script>";
+          }
+    ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -21,7 +30,7 @@
             </div>
             <ul class="nav-liste" id="navi-liste">
                 <li class="element-liste">
-                    <a href="../web/projet.html">Retour</a>
+                    <a href="../web/projet.php">Retour</a>
                 </li>
                 <li class="element-liste">
                     <a href="../php/deconnexion.php">Déconnexion</a>
@@ -38,7 +47,7 @@
                     Tous les téléphones sont connectés à un serveur Asterisk. La représentation de l'architecture est la suivante :
                 </p>
                 <img class="schema" src="../media/schemareseau.png" alt="plan du réseau ">
-                <a class="button" href="./details/detail_reseau.html">
+                <a class="button" href="./details/detail_reseau.php">
                 Cliquez pour plus de détails sur l'installation
                 </a>
             </article>

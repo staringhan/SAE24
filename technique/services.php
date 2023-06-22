@@ -1,3 +1,12 @@
+<?php
+    //check session to see if the user is connected as an administrator with the right login and password
+    session_start();
+    if (!isset($_SESSION['admin']) ){
+            // sebd ab alert saying that the user is not connected and redirect to index.php;
+            echo "<script>alert('Vous n\'êtes pas connecté en tant qu\'administrateur')</script>";
+            echo "<script type='text/javascript'> window.location.href = '../index.html'; </script>";
+          }
+    ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -21,7 +30,7 @@
             </div>
             <ul class="nav-liste" id="navi-liste">
                 <li class="element-liste">
-                    <a href="../web/projet.html">Retour</a>
+                    <a href="../web/projet.php">Retour</a>
                 </li>
                 <li class="element-liste">
                     <a href="../php/deconnexion.php">Déconnexion</a>
@@ -65,13 +74,13 @@
                     le point d'accès Wi-Fi.
                 </p>
                 <p>La mise en place de plusieurs pools d'adresses IP a plusieurs avantages.
-                   Premièrement, elle permet une gestion plus granulaire du réseau,
-                   chaque type d'appareil ayant sa propre plage d'adresses. Deuxièmement, 
-                   elle facilite l'identification des problèmes réseau, car on peut rapidement 
-                   déterminer quel type d'appareil est impliqué en fonction de l'adresse IP. 
-                     Enfin, elle permet de contrôler le trafic réseau en assignant chaque type 
-                     d'appareil à son propre sous-réseau, réduisant ainsi les risques d'interférences 
-                     et améliorant la performance du réseau.
+                    Premièrement, elle permet une gestion plus granulaire du réseau,
+                    chaque type d'appareil ayant sa propre plage d'adresses. Deuxièmement, 
+                    elle facilite l'identification des problèmes réseau, car on peut rapidement 
+                    déterminer quel type d'appareil est impliqué en fonction de l'adresse IP. 
+                    Enfin, elle permet de contrôler le trafic réseau en assignant chaque type 
+                    d'appareil à son propre sous-réseau, réduisant ainsi les risques d'interférences 
+                    et améliorant la performance du réseau.
                 </p>
                 <img class="schema" src="../media/capture_serv/1Capture_Services_WS2019.PNG" alt="capture de services ">  
             </article>
@@ -86,8 +95,8 @@
                     Le DNS est un service qui permet de traduire les adresses IP en noms, 
                     facilitant ainsi la navigation et la gestion du réseau. En d'autres termes, 
                     au lieu de mémoriser des adresses IP potentiellement complexes,
-                     on peut simplement utiliser des noms de domaine ou des noms d'hôtes pour identifier 
-                     les différents équipements du réseau.
+                    on peut simplement utiliser des noms de domaine ou des noms d'hôtes pour identifier 
+                    les différents équipements du réseau.
                 </p>
                 <p>
                     Nous avons configuré plusieurs zones dans notre service DNS pour répondre 
@@ -98,9 +107,9 @@
                     La "Reverse Lookup Zone" a été mise en place pour effectuer la traduction inverse, 
                     c'est-à-dire convertir les adresses IP en noms d'hôtes. Cette zone est particulièrement 
                     utile pour la résolution de problèmes de réseau, car elle permet d'identifier rapidement
-                     et facilement les machines à partir de leurs adresses IP. Dans notre cas, la "Reverse Lookup Zone"
-                      a été configurée pour traduire toutes les adresses des équipements dans la plage 192.168.180.0/24 
-                      en noms d'hôtes.
+                    et facilement les machines à partir de leurs adresses IP. Dans notre cas, la "Reverse Lookup Zone"
+                    a été configurée pour traduire toutes les adresses des équipements dans la plage 192.168.180.0/24 
+                    en noms d'hôtes.
                 </p>
                 <p>
                     Les deux "Forward Lookup Zones" ont été configurées pour effectuer la traduction directe, 
@@ -144,7 +153,7 @@
                     Ces rapports peuvent inclure des informations sur l'utilisation de la bande passante, 
                     l'état des équipements, l'historique des alertes et bien d'autres données pertinentes. 
                     Ces informations peuvent être utiles pour comprendre les tendances à long terme, planifier
-                     les mises à niveau du réseau et identifier les domaines qui nécessitent une attention particulière.
+                    les mises à niveau du réseau et identifier les domaines qui nécessitent une attention particulière.
                 </p>
                 <p>
                     <strong>Gestion des correctifs et des mises à jour : </strong>Atera offre la possibilité de gérer 
@@ -170,7 +179,7 @@
                     L'une des autres tâches importantes que j'ai menées pendant cette période a été l'installation et la configuration des 
                     Services de domaine Active Directory (ADDS). L'ADDS est un service de Microsoft qui permet une gestion centralisée des 
                     ressources et des utilisateurs dans un réseau. Cette configuration a impliqué plusieurs tâches clés, y compris la gestion
-                     des utilisateurs, des groupes et des profils.
+                    des utilisateurs, des groupes et des profils.
                 </p>
                 <p>
                     <strong>Gestion des utilisateurs : </strong>La première étape dans la mise en place de l'ADDS a été la création et 
@@ -196,7 +205,6 @@
                 <img class="schema" src="../media/capture_serv/7Capture_profile_file.PNG" alt="capture des dossiers de profil ">  
                 <img class="schema" src="../media/capture_serv/8Capture_profile.PNG" alt="capture des profils ">  
             </article>
-
             <article class="texte">
                 <h3>xampp</h3>
                 <p> Nous avons utilisé Xampp pour mettre en place plusieurs servicess.</p>
@@ -209,11 +217,10 @@
                 <h4>WEB</h4>
                 <p>
                     Nous avons mis en place un serveur web avec le service Apache. Ce service permet de créer un site web. Nous l'utilisons notamment pour héberger notre site web. 
-                    De la même manière qu'avec le FTP, nous avons utilisé XAMPP pour mettre en place ce service.</p>
+                    De la même manière qu'avec le FTP, nous avons utilisé XAMPP pour mettre en place ce service.
+                </p>
                 <img class="schema" src="../media/capture_switch_routeur/xampp.PNG" alt="capture xampp start">  
             </article>
         </section>
-        
-        
     </body>
 </html>

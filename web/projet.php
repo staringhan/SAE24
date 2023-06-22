@@ -1,3 +1,12 @@
+<?php
+//check session to see if the user is connected as an administrator with the right login and password
+session_start();
+if (!isset($_SESSION['admin']) ){
+        // sebd ab alert saying that the user is not connected and redirect to index.php;
+        echo "<script>alert('Vous n\'êtes pas connecté en tant qu\'administrateur')</script>";
+        echo "<script type='text/javascript'> window.location.href = '../index.html'; </script>";
+      }
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -58,28 +67,28 @@
                     <img class="schema" src="../media/logophone.jpeg" alt="logo téléphone ">
                     <section class="rectangletexte">
                         <h3>Téléphonie</h3>
-                        <a href="../technique/telephonie.html"  >Téléphonie</a>
+                        <a href="../technique/telephonie.php"  >Téléphonie</a>
                     </section>
                 </div>
                 <div class="rectangle">
                   <img class="schema" src="../media/logoservices.jpeg" alt="logo services ">
                   <section class="rectangletexte">
                       <h3>Services</h3>
-                      <a href="../technique/services.html">Détails des services implémentés</a>
+                      <a href="../technique/services.php">Détails des services implémentés</a>
                   </section>
               </div>
                 <div class="rectangle">
                     <img class="schema" src="../media/logonetwork.jpeg" alt="logo reseau ">
                     <section class="rectangletexte">
                         <h3>Réseau</h3>
-                        <a href="../technique/reseau.html" >Réseau du système d'information</a>
+                        <a href="../technique/reseau.php" >Réseau du système d'information</a>
                     </section>
                 </div>
                 <div class="rectangle">
                     <img class="schema" src="../media/logogantt.jpeg" alt="logo gannt ">
                     <section class="rectangletexte">
                         <h3>Diagramme de Gantt</h3>
-                        <a href="#" target="_blank">Diagramme de GANTT</a>
+                        <a href="../technique/gantt.php" target="_blank">Diagramme de GANTT</a>
                     </section>
                 </div>
                 <div class="rectangle">
@@ -100,28 +109,28 @@
                     <img class="schema" src="../media/logomembres.jpeg" alt="logo membres ">
                     <section class="rectangletexte">
                         <h3>Synthèse par membre</h3>
-                        <a href="../technique/synthesemembre.html">Travail réalisé par chaque membre de l'équipe</a>
+                        <a href="../technique/synthesemembre.php">Travail réalisé par chaque membre de l'équipe</a>
                     </section>
                 </div>
                 <div class="rectangle">
                     <img class="schema" src="../media/logoprobleme.jpeg" alt="logos problemes ">
                     <section class="rectangletexte">
                         <h3>Problèmes + Solutions</h3>
-                        <a href="../technique/problemesolution.html" >Problèmes rencontrés et solutions rencontrées</a>
+                        <a href="../technique/problemesolution.php" >Problèmes rencontrés et solutions rencontrées</a>
                     </section>
                 </div>
                 <div class="rectangle">
                     <img class="schema" src="../media/logoconclusion.jpeg" alt="logo conclusion ">
                     <section class="rectangletexte">
                         <h3>Conclusion</h3>
-                        <a href="../technique/conclusion.html" >Conclusion sur la SAE et retour sur la satisfaction du cahier des charges</a>
+                        <a href="../technique/conclusion.php" >Conclusion sur la SAE et retour sur la satisfaction du cahier des charges</a>
                     </section>
                 </div>
                 <div class="rectangle">
                     <img class="schema" src="../media/logovalidation.jpeg" alt="logo Validation ">
                     <section class="rectangletexte">
                         <h3>Validation</h3>
-                        <a href="../technique/validation.html" >Validation des pages HTML et CSS</a>
+                        <a href="../technique/validation.php" >Validation des pages HTML et CSS</a>
                     </section>
                 </div>
             </div>
