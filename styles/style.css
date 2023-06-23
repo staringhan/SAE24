@@ -523,13 +523,6 @@ ul{
 		display: none;
 	}
 
-	.active{
-		display: block;
-		background-color:rgba(0,0,0,0.8);
-		height: 850px;
-		
-		
-	}
 	
 	
 }
