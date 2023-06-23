@@ -89,6 +89,10 @@ if (!isset($_SESSION['admin']) ){
                     <td>Secrétaire/ Medecin généraliste/ dentiste </td>
                     <td>211</td>
                 </tr>
+                <tr>
+                    <td>I.V.R.</td>
+                    <td>221</td>
+                </tr>
             </table>
         </section>
     </body>
