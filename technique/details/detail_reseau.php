@@ -45,7 +45,7 @@
                     Il permet de faire communiquer les ordinateurs entre eux et de partager des ressources (imprimantes, scanners, etc.).
                     Nous avons donc configuré le switch pour définir les différents VLANs et les ports associés à ces VLANs.  
                 </p>
-                <img class="schema" src="../../media/capture_switch_routeur/Capture.PNg" alt="plan du réseau ">
+                <img class="schema" src="../../media/capture_switch_routeur/Capture.PNG" alt="plan du réseau ">
             </article>
             <article class="texte">
                 <h3>Configiuration du routeur</h3>
